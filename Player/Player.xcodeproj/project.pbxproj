@@ -26,12 +26,11 @@
 		F49D42FE1958A41500111508 /* BPBPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F49D42FC1958A41500111508 /* BPBPlayerViewController.m */; };
 		F49D42FF1958A41500111508 /* BPBPlayerViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F49D42FD1958A41500111508 /* BPBPlayerViewControlleriPad.xib */; };
 		F49D43011958A44E00111508 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49D43001958A44E00111508 /* MediaPlayer.framework */; };
-		F49D43061958AD8300111508 /* sample.m4v in Resources */ = {isa = PBXBuildFile; fileRef = F49D43051958AD8300111508 /* sample.m4v */; };
-		F4B175F4196AE77C003AAF90 /* VideoCompositor.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B175F3196AE77C003AAF90 /* VideoCompositor.m */; };
-		F4C445D91959C731007CC699 /* test.m4v in Resources */ = {isa = PBXBuildFile; fileRef = F4C445D81959C731007CC699 /* test.m4v */; };
 		F4C445DF195A0657007CC699 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C445DE195A0657007CC699 /* AVFoundation.framework */; };
 		F4DCEFD11961B25E00664967 /* BPBPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DCEFD01961B25E00664967 /* BPBPlayerViewController.xib */; };
 		F4E327531965DE3A00C56B6D /* BPBCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E327521965DE3A00C56B6D /* BPBCapture.m */; };
+		F4F3B542196C38990023B679 /* VideoCompositor.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F3B541196C38990023B679 /* VideoCompositor.m */; };
+		F4F3B548196C39740023B679 /* Player-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4F3B547196C39740023B679 /* Player-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +53,6 @@
 		F49D42CC19589D2600111508 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F49D42CE19589D2600111508 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F49D42D019589D2600111508 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		F49D42D419589D2600111508 /* Player-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Player-Info.plist"; sourceTree = "<group>"; };
 		F49D42D619589D2600111508 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F49D42D819589D2600111508 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F49D42DA19589D2600111508 /* Player-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Player-Prefix.pch"; sourceTree = "<group>"; };
@@ -70,14 +68,15 @@
 		F49D42FC1958A41500111508 /* BPBPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPBPlayerViewController.m; sourceTree = "<group>"; };
 		F49D42FD1958A41500111508 /* BPBPlayerViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BPBPlayerViewControlleriPad.xib; sourceTree = "<group>"; };
 		F49D43001958A44E00111508 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		F49D43051958AD8300111508 /* sample.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.m4v; sourceTree = "<group>"; };
-		F4B175F2196AE77C003AAF90 /* VideoCompositor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCompositor.h; sourceTree = "<group>"; };
-		F4B175F3196AE77C003AAF90 /* VideoCompositor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCompositor.m; sourceTree = "<group>"; };
-		F4C445D81959C731007CC699 /* test.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.m4v; sourceTree = "<group>"; };
 		F4C445DB195A064B007CC699 /* BPBCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPBCapture.h; sourceTree = "<group>"; };
 		F4C445DE195A0657007CC699 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F4DCEFD01961B25E00664967 /* BPBPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BPBPlayerViewController.xib; sourceTree = "<group>"; };
 		F4E327521965DE3A00C56B6D /* BPBCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPBCapture.m; sourceTree = "<group>"; };
+		F4F3B540196C388B0023B679 /* VideoCompositor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCompositor.h; sourceTree = "<group>"; };
+		F4F3B541196C38990023B679 /* VideoCompositor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCompositor.m; sourceTree = "<group>"; };
+		F4F3B543196C38F30023B679 /* sample.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.m4v; sourceTree = "<group>"; };
+		F4F3B544196C38F30023B679 /* test.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.m4v; sourceTree = "<group>"; };
+		F4F3B547196C39740023B679 /* Player-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Player-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,8 +149,8 @@
 				F4DCEFD01961B25E00664967 /* BPBPlayerViewController.xib */,
 				F4C445DB195A064B007CC699 /* BPBCapture.h */,
 				F4E327521965DE3A00C56B6D /* BPBCapture.m */,
-				F4B175F2196AE77C003AAF90 /* VideoCompositor.h */,
-				F4B175F3196AE77C003AAF90 /* VideoCompositor.m */,
+				F4F3B541196C38990023B679 /* VideoCompositor.m */,
+				F4F3B540196C388B0023B679 /* VideoCompositor.h */,
 				F45239EA195B15CB00D9FEF0 /* BPBReviewViewController.h */,
 				F45239EB195B15CB00D9FEF0 /* BPBReviewViewController.m */,
 				F45239EC195B15CB00D9FEF0 /* BPBReviewViewController.xib */,
@@ -165,9 +164,9 @@
 		F49D42D319589D2600111508 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F4C445D81959C731007CC699 /* test.m4v */,
-				F49D43051958AD8300111508 /* sample.m4v */,
-				F49D42D419589D2600111508 /* Player-Info.plist */,
+				F4F3B543196C38F30023B679 /* sample.m4v */,
+				F4F3B547196C39740023B679 /* Player-Info.plist */,
+				F4F3B544196C38F30023B679 /* test.m4v */,
 				F49D42D519589D2600111508 /* InfoPlist.strings */,
 				F49D42D819589D2600111508 /* main.m */,
 				F49D42DA19589D2600111508 /* Player-Prefix.pch */,
@@ -269,12 +268,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F46296AA19635C7700D11564 /* BPBPlayerLandscapeiPhone.xib in Resources */,
-				F4C445D91959C731007CC699 /* test.m4v in Resources */,
+				F4F3B548196C39740023B679 /* Player-Info.plist in Resources */,
 				F49D42D719589D2600111508 /* InfoPlist.strings in Resources */,
 				F49D42FF1958A41500111508 /* BPBPlayerViewControlleriPad.xib in Resources */,
 				F49D42DF19589D2600111508 /* Images.xcassets in Resources */,
 				F4DCEFD11961B25E00664967 /* BPBPlayerViewController.xib in Resources */,
-				F49D43061958AD8300111508 /* sample.m4v in Resources */,
 				F45239EE195B15CB00D9FEF0 /* BPBReviewViewController.xib in Resources */,
 				F496E02119631F280088797D /* BPBReviewViewControlleriPhone.xib in Resources */,
 			);
@@ -296,8 +294,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F49D42DD19589D2600111508 /* AppDelegate.m in Sources */,
+				F4F3B542196C38990023B679 /* VideoCompositor.m in Sources */,
 				F49D42D919589D2600111508 /* main.m in Sources */,
-				F4B175F4196AE77C003AAF90 /* VideoCompositor.m in Sources */,
 				F4E327531965DE3A00C56B6D /* BPBCapture.m in Sources */,
 				F45239ED195B15CB00D9FEF0 /* BPBReviewViewController.m in Sources */,
 				F49D42FE1958A41500111508 /* BPBPlayerViewController.m in Sources */,
