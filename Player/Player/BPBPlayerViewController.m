@@ -273,7 +273,11 @@
 
 - (IBAction)mute:(id)sender {
     [self.capture toggleMute];
-    ((UIButton*)sender).alpha = 0.5f;
+    if ([((UIButton*)sender).titleLabel.text isEqualToString:@"Mute"]) {
+        ((UIButton*)sender).titleLabel.text = @"Unmute";
+    } else {
+        ((UIButton*)sender).titleLabel.text = @"Mute";
+    }
 }
 
 -(void) stopPlaybackTimeMonitor {
