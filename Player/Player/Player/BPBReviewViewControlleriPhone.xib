@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BPBReviewViewController">
+            <connections>
+                <outlet property="reviewPlaybackView" destination="PpT-l7-rUI" id="dqc-Xv-5Dp"/>
+                <outlet property="view" destination="hxf-6z-x9Q" id="L4v-rv-wLS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="hxf-6z-x9Q">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PpT-l7-rUI" userLabel="Review Playback View">
+                    <rect key="frame" x="0.0" y="60" width="320" height="508"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDp-Ve-Y4U" userLabel="Done View">
+                    <rect key="frame" x="0.0" y="20" width="320" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zic-By-ZvI">
+                            <rect key="frame" x="20" y="5" width="46" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="46" id="vcQ-IQ-Mtp"/>
+                            </constraints>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="stop:" destination="-1" eventType="touchUpInside" id="rVm-cc-GCh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F09-nz-85f">
+                            <rect key="frame" x="79" y="5" width="163" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="AJG-yf-22H"/>
+                                <constraint firstAttribute="width" constant="163" id="MlB-o8-ruV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="Recording Preview">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Zic-By-ZvI" secondAttribute="bottom" constant="5" id="X5v-Ds-Okd"/>
+                        <constraint firstAttribute="centerY" secondItem="F09-nz-85f" secondAttribute="centerY" id="Yg7-7n-LUA"/>
+                        <constraint firstItem="Zic-By-ZvI" firstAttribute="leading" secondItem="fDp-Ve-Y4U" secondAttribute="leading" constant="20" symbolic="YES" id="ZDg-o2-Qm8"/>
+                        <constraint firstAttribute="centerX" secondItem="F09-nz-85f" secondAttribute="centerX" id="kMn-lc-SHY"/>
+                        <constraint firstAttribute="centerY" secondItem="Zic-By-ZvI" secondAttribute="centerY" id="rpo-7r-oYR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fDp-Ve-Y4U" firstAttribute="leading" secondItem="hxf-6z-x9Q" secondAttribute="leading" id="8dZ-Ar-4Nz"/>
+                <constraint firstAttribute="trailing" secondItem="fDp-Ve-Y4U" secondAttribute="trailing" id="bOh-0a-c2d"/>
+                <constraint firstItem="PpT-l7-rUI" firstAttribute="leading" secondItem="hxf-6z-x9Q" secondAttribute="leading" id="g4w-Ew-70U"/>
+                <constraint firstAttribute="trailing" secondItem="PpT-l7-rUI" secondAttribute="trailing" id="gAt-KN-qlW"/>
+                <constraint firstAttribute="bottom" secondItem="PpT-l7-rUI" secondAttribute="bottom" id="rfJ-KE-WGD"/>
+                <constraint firstItem="fDp-Ve-Y4U" firstAttribute="top" secondItem="hxf-6z-x9Q" secondAttribute="top" constant="20" symbolic="YES" id="v2H-m2-dLi"/>
+                <constraint firstItem="PpT-l7-rUI" firstAttribute="top" secondItem="fDp-Ve-Y4U" secondAttribute="bottom" id="zdR-gx-Ydv"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
